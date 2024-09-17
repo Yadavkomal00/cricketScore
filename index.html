@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket Score Simulator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            text-align: center;
+            padding: 50px;
+        }
+
+        h1 {
+            font-size: 2em;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+
+        .box {
+            font-size: 1.5em;
+            padding: 20px;
+            margin: 20px auto;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            transition: background-color 0.3s ease;
+            display: block;
+        }
+
+        #scoreBoard {
+            background-color: #007bff;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        #currentRun {
+            background-color: #28a745;
+            color: #fff;
+            display: none;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 1.2em;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Cricket Score Simulator</h1>
+
+    <label class="box" id="scoreBoard">Click to play !!</label>
+    <br>
+    <label class="box" id="currentRun"></label>
+    <br>
+    <button onclick="getScore()">Play</button>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
